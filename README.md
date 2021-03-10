@@ -1,5 +1,6 @@
 # DateRangePicker
 
+<img width="200" alt="Screen Shot 2021-03-10 at 4 02 20 PM" src="https://user-images.githubusercontent.com/35375629/110629989-115ade00-81ba-11eb-85af-f6d5f026066c.png"> <img width="200" alt="image" src="https://user-images.githubusercontent.com/35375629/110630229-5b43c400-81ba-11eb-8349-ebe73c70f9ca.png">
 <img width="200" alt="Screen Shot 2021-03-10 at 3 54 22 PM" src="https://user-images.githubusercontent.com/35375629/110629645-a3aeb200-81b9-11eb-97e7-a7724cb076b2.png">
 
 # Requirements

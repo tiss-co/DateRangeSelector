@@ -36,6 +36,27 @@ calendarView.selectedYear = 2019 // The defult value is now year but when you se
 
 ```
 
+### Delegate
+```swift
+class ViewController: UIViewController {
+override func viewDidLoad() {
+    super.viewDidLoad()
+    ...
+    calendarView.delegate = self
+}
+...
+}
+
+extension ViewController: CalendarViewDelegate {
+    func didSelectDate(startDate: Date, endDate: Date) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM d, yyyy"
+        fromValueLabel.text = dateFormatter.string(from: startDate)
+        toValueLabel.text = dateFormatter.string(from: endDate)
+    }
+}
+```
+
 ### Customize gauge
 
 - Max Date

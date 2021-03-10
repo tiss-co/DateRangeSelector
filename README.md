@@ -1,6 +1,7 @@
 # DateRangePicker
 
-![Simulator Screen Shot - iPhone 11 - 2021-03-10 at 15 50 22](https://user-images.githubusercontent.com/35375629/110628516-567e1080-81b8-11eb-8eaa-5a739b19d9ab.png)
+<img width="200" alt="Screen Shot 2021-03-10 at 3 54 22 PM" src="https://user-images.githubusercontent.com/35375629/110629645-a3aeb200-81b9-11eb-97e7-a7724cb076b2.png">
+
 # Requirements
 - Xcode 11+
 - Swift 5

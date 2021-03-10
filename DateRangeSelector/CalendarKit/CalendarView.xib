@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalendarView" customModule="DateRangeSelector" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Os7-2b-dhF" id="t21-GI-zBx"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="0eR-zE-lgp"/>
+                <outlet property="headerBgView" destination="zRK-F9-ub2" id="ys0-vg-HFN"/>
+                <outlet property="monthYearLabel" destination="Qka-zX-tRA" id="d3h-5c-6Lv"/>
+                <outlet property="nextButton" destination="isq-5H-De1" id="BZh-pm-NNh"/>
+                <outlet property="previousButton" destination="WFL-Wt-ffV" id="NfK-bd-nzP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRK-F9-ub2">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qka-zX-tRA">
+                            <rect key="frame" x="191" y="15.5" width="32" height="19.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFL-Wt-ffV">
+                            <rect key="frame" x="8" y="0.0" width="178" height="50"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="◀︎">
+                                <color key="titleColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="retreatToPreviousMonthWithButton:" destination="-1" eventType="touchUpInside" id="fNV-b6-Nqv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isq-5H-De1">
+                            <rect key="frame" x="228" y="0.0" width="178" height="50"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                            <state key="normal" title="▶︎">
+                                <color key="titleColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="advanceToFollowingMonthWithButton:" destination="-1" eventType="touchUpInside" id="ZfB-x4-OWD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="Qka-zX-tRA" secondAttribute="centerY" id="18B-sv-Md6"/>
+                        <constraint firstAttribute="bottom" secondItem="WFL-Wt-ffV" secondAttribute="bottom" id="5es-4t-HWc"/>
+                        <constraint firstItem="Qka-zX-tRA" firstAttribute="leading" secondItem="WFL-Wt-ffV" secondAttribute="trailing" constant="5" id="7Wd-Il-fcL"/>
+                        <constraint firstAttribute="bottom" secondItem="isq-5H-De1" secondAttribute="bottom" id="EX6-yu-Z0h"/>
+                        <constraint firstAttribute="centerX" secondItem="Qka-zX-tRA" secondAttribute="centerX" id="Fs1-lf-WqB"/>
+                        <constraint firstAttribute="trailing" secondItem="isq-5H-De1" secondAttribute="trailing" constant="8" id="J24-aK-UMd"/>
+                        <constraint firstItem="isq-5H-De1" firstAttribute="leading" secondItem="Qka-zX-tRA" secondAttribute="trailing" constant="5" id="NmX-8J-0a4"/>
+                        <constraint firstAttribute="height" constant="50" id="VLp-GS-SIn"/>
+                        <constraint firstItem="WFL-Wt-ffV" firstAttribute="top" secondItem="zRK-F9-ub2" secondAttribute="top" id="erf-ie-jlF"/>
+                        <constraint firstItem="isq-5H-De1" firstAttribute="top" secondItem="zRK-F9-ub2" secondAttribute="top" id="f7a-g9-h8Q"/>
+                        <constraint firstItem="WFL-Wt-ffV" firstAttribute="leading" secondItem="zRK-F9-ub2" secondAttribute="leading" constant="8" id="qHg-oS-pKG"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Os7-2b-dhF">
+                    <rect key="frame" x="0.0" y="50" width="414" height="250"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="EAr-Yd-NK9">
+                        <size key="itemSize" width="315" height="250"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zRK-F9-ub2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1Ye-gW-T4L"/>
+                <constraint firstAttribute="trailing" secondItem="Os7-2b-dhF" secondAttribute="trailing" id="3jf-ou-euZ"/>
+                <constraint firstItem="zRK-F9-ub2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="S6c-c4-QwS"/>
+                <constraint firstAttribute="bottom" secondItem="Os7-2b-dhF" secondAttribute="bottom" id="gfc-2X-2th"/>
+                <constraint firstAttribute="trailing" secondItem="zRK-F9-ub2" secondAttribute="trailing" id="lM7-4P-bET"/>
+                <constraint firstItem="Os7-2b-dhF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xcc-t7-cxr"/>
+                <constraint firstItem="Os7-2b-dhF" firstAttribute="top" secondItem="zRK-F9-ub2" secondAttribute="bottom" id="xk1-1e-2GF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="313.5" y="337"/>
+        </view>
+    </objects>
+</document>

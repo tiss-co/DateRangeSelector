@@ -16,6 +16,16 @@
 		2995100325F101DC00B305DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2995100125F101DC00B305DE /* Main.storyboard */; };
 		2995100525F101DF00B305DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2995100425F101DF00B305DE /* Assets.xcassets */; };
 		2995100825F101DF00B305DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2995100625F101DF00B305DE /* LaunchScreen.storyboard */; };
+		2995101B25F102D200B305DE /* MonthCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995101125F102D200B305DE /* MonthCollectionCell.swift */; };
+		2995101C25F102D200B305DE /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2995101225F102D200B305DE /* CalendarView.xib */; };
+		2995101D25F102D200B305DE /* MonthCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2995101325F102D200B305DE /* MonthCollectionCell.xib */; };
+		2995101F25F102D200B305DE /* DayCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995101525F102D200B305DE /* DayCollectionCell.swift */; };
+		2995102025F102D200B305DE /* WeekHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2995101625F102D200B305DE /* WeekHeaderView.xib */; };
+		2995102125F102D200B305DE /* DayCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2995101725F102D200B305DE /* DayCollectionCell.xib */; };
+		2995102225F102D200B305DE /* CalendarLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995101825F102D200B305DE /* CalendarLogic.swift */; };
+		2995102325F102D200B305DE /* WeekHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995101925F102D200B305DE /* WeekHeaderView.swift */; };
+		2995102425F102D200B305DE /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995101A25F102D200B305DE /* CalendarView.swift */; };
+		29AA51F625F1124E003FD647 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AA51F525F1124E003FD647 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +53,17 @@
 		2995100425F101DF00B305DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2995100725F101DF00B305DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2995100925F101DF00B305DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2995101125F102D200B305DE /* MonthCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthCollectionCell.swift; sourceTree = "<group>"; };
+		2995101225F102D200B305DE /* CalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
+		2995101325F102D200B305DE /* MonthCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonthCollectionCell.xib; sourceTree = "<group>"; };
+		2995101525F102D200B305DE /* DayCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayCollectionCell.swift; sourceTree = "<group>"; };
+		2995101625F102D200B305DE /* WeekHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeekHeaderView.xib; sourceTree = "<group>"; };
+		2995101725F102D200B305DE /* DayCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DayCollectionCell.xib; sourceTree = "<group>"; };
+		2995101825F102D200B305DE /* CalendarLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarLogic.swift; sourceTree = "<group>"; };
+		2995101925F102D200B305DE /* WeekHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekHeaderView.swift; sourceTree = "<group>"; };
+		2995101A25F102D200B305DE /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		29AA51F525F1124E003FD647 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		29AA51FE25F12C13003FD647 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +89,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		29AA51FB25F12C13003FD647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +115,7 @@
 				29950FD725F1016900B305DE /* DateRangeSelector.framework */,
 				29950FE025F1016A00B305DE /* DateRangeSelectorTests.xctest */,
 				29950FF925F101DC00B305DE /* DateRangeSelectorExample.app */,
+				29AA51FE25F12C13003FD647 /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +123,7 @@
 		29950FD925F1016900B305DE /* DateRangeSelector */ = {
 			isa = PBXGroup;
 			children = (
+				2995101025F102D200B305DE /* CalendarKit */,
 				29950FDA25F1016900B305DE /* DateRangeSelector.h */,
 				29950FDB25F1016900B305DE /* Info.plist */,
 			);
@@ -121,6 +151,31 @@
 				2995100925F101DF00B305DE /* Info.plist */,
 			);
 			path = DateRangeSelectorExample;
+			sourceTree = "<group>";
+		};
+		2995101025F102D200B305DE /* CalendarKit */ = {
+			isa = PBXGroup;
+			children = (
+				2995102825F1030E00B305DE /* CollectionViewCell */,
+				2995101A25F102D200B305DE /* CalendarView.swift */,
+				2995101225F102D200B305DE /* CalendarView.xib */,
+				2995101925F102D200B305DE /* WeekHeaderView.swift */,
+				2995101625F102D200B305DE /* WeekHeaderView.xib */,
+				2995101825F102D200B305DE /* CalendarLogic.swift */,
+				29AA51F525F1124E003FD647 /* Extensions.swift */,
+			);
+			path = CalendarKit;
+			sourceTree = "<group>";
+		};
+		2995102825F1030E00B305DE /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2995101125F102D200B305DE /* MonthCollectionCell.swift */,
+				2995101325F102D200B305DE /* MonthCollectionCell.xib */,
+				2995101525F102D200B305DE /* DayCollectionCell.swift */,
+				2995101725F102D200B305DE /* DayCollectionCell.xib */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +245,23 @@
 			productReference = 29950FF925F101DC00B305DE /* DateRangeSelectorExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		29AA51FD25F12C13003FD647 /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29AA520F25F12C15003FD647 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				29AA51FA25F12C13003FD647 /* Sources */,
+				29AA51FB25F12C13003FD647 /* Frameworks */,
+				29AA51FC25F12C13003FD647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example;
+			productName = Example;
+			productReference = 29AA51FE25F12C13003FD647 /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +278,9 @@
 						CreatedOnToolsVersion = 12.0.1;
 					};
 					29950FF825F101DC00B305DE = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					29AA51FD25F12C13003FD647 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
 				};
@@ -226,6 +301,7 @@
 				29950FD625F1016900B305DE /* DateRangeSelector */,
 				29950FDF25F1016A00B305DE /* DateRangeSelectorTests */,
 				29950FF825F101DC00B305DE /* DateRangeSelectorExample */,
+				29AA51FD25F12C13003FD647 /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -235,6 +311,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2995102125F102D200B305DE /* DayCollectionCell.xib in Resources */,
+				2995102025F102D200B305DE /* WeekHeaderView.xib in Resources */,
+				2995101D25F102D200B305DE /* MonthCollectionCell.xib in Resources */,
+				2995101C25F102D200B305DE /* CalendarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +335,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		29AA51FC25F12C13003FD647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -262,6 +349,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2995101B25F102D200B305DE /* MonthCollectionCell.swift in Sources */,
+				2995102325F102D200B305DE /* WeekHeaderView.swift in Sources */,
+				2995102425F102D200B305DE /* CalendarView.swift in Sources */,
+				2995101F25F102D200B305DE /* DayCollectionCell.swift in Sources */,
+				2995102225F102D200B305DE /* CalendarLogic.swift in Sources */,
+				29AA51F625F1124E003FD647 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +373,13 @@
 				2995100025F101DC00B305DE /* ViewController.swift in Sources */,
 				29950FFC25F101DC00B305DE /* AppDelegate.swift in Sources */,
 				29950FFE25F101DC00B305DE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29AA51FA25F12C13003FD647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +586,7 @@
 		29950FEF25F1016A00B305DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5SH4GJWBN;
 				INFOPLIST_FILE = DateRangeSelectorTests/Info.plist;
@@ -504,6 +605,7 @@
 		29950FF025F1016A00B305DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5SH4GJWBN;
 				INFOPLIST_FILE = DateRangeSelectorTests/Info.plist;
@@ -557,6 +659,44 @@
 			};
 			name = Release;
 		};
+		29AA521025F12C15003FD647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5SH4GJWBN;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.edgecomenergy.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29AA521125F12C15003FD647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5SH4GJWBN;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.edgecomenergy.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -592,6 +732,15 @@
 			buildConfigurations = (
 				2995100A25F101DF00B305DE /* Debug */,
 				2995100B25F101DF00B305DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29AA520F25F12C15003FD647 /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29AA521025F12C15003FD647 /* Debug */,
+				29AA521125F12C15003FD647 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

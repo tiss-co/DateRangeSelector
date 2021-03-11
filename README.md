@@ -1,4 +1,4 @@
-# DateRangePicker
+# DateRangeSelector
 
 <img width="200" alt="Screen Shot 2021-03-10 at 4 02 20 PM" src="https://user-images.githubusercontent.com/35375629/110629989-115ade00-81ba-11eb-85af-f6d5f026066c.png"> 
 

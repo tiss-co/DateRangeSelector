@@ -13,7 +13,7 @@
 
 ## Cocoapods
 ```ruby
-pod 'DateRangeSelector', :git => 'git@github.com:boof-tech/DateRangeSelector.git', :tag => '0.0.2'
+pod 'DateRangeSelector', :git => 'https://github.com/boof-tech/DateRangeSelector', :tag => '0.0.2'
 ```
 
 # Usage

@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name          = "DateRangeSelector"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.summary       = "customizable calendar view as a date range selector"
 
   spec.homepage      = "https://github.com/boof-tech/DateRangeSelector"
@@ -13,6 +13,6 @@ Pod::Spec.new do |spec|
   spec.license       = { :type => "MIT" }
   spec.author        = { "Boof.tech" => "info@boof.tech" }
   spec.platform      = :ios, "11.0"
-  spec.source        = { :git => 'https://github.com/boof-tech/DateRangeSelector.git', :tag => '0.0.1'}
-  spec.source_files  = "DateRangeSelector/**/*.{swift}"
+  spec.source        = { :git => 'https://github.com/boof-tech/DateRangeSelector.git', :tag => '0.0.2'}
+  spec.source_files  = "DateRangeSelector/**/*.{swift,xib}"
 end

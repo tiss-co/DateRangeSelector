@@ -48,7 +48,7 @@ public class CalendarView: UIView {
     public var startDate: Date? {
         didSet {
             DispatchQueue.main.async { [self] in
-                self.moveToSelectedDate(selectedDate: startDate,animated: true)
+                self.moveToSelectedDate(selectedDate: startDate,animated: false)
             }
         }
     }
@@ -56,7 +56,7 @@ public class CalendarView: UIView {
     public var endDate: Date? {
         didSet {
             DispatchQueue.main.async { [self] in
-                self.moveToSelectedDate(selectedDate: endDate,animated: true)
+                self.moveToSelectedDate(selectedDate: endDate,animated: false)
                 guard let start = startDate , let end = endDate else { return }
                 self.delegate?.didSelectDate(startDate: start, endDate : end)
             }
@@ -214,7 +214,7 @@ public class CalendarView: UIView {
     
     public override func layoutSubviews() {
         super.layoutSubviews()
-        collectionView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+        collectionView.setContentOffset(CGPoint(x: 0, y: 0), animated: false)
     }
     
     func calcuteDays(year: Int? = nil){
@@ -282,7 +282,7 @@ public class CalendarView: UIView {
         updateHeader(pageNumber: pageNumber)
         collectionView.scrollToItem(at: visibleIndexPath,
                                     at: .centeredHorizontally,
-                                    animated: animate)
+                                    animated: false)
     }
     
     func moveToSelectedDate(selectedDate: Date?, animated: Bool) {
